@@ -1,0 +1,384 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    /* overflow-y: scroll; */
+  /* overflow-x: hidden; */
+  /* overflow: scroll; */
+}
+*{
+    box-sizing: border-box;
+}
+
+
+
+.card-title{
+    word-wrap: anywhere;
+}
+
+/* ***********************************************************styling for nav*********************************************************************** */
+#mainNav{
+    font-size: 1.5rem;
+    font-weight: 100;
+    /* background-color: darkslategray; */
+}
+
+#mainNav .navbar-brand{
+    font-size: 1.5rem;
+    color: black;
+    }
+
+    #mainNav .nav-link{
+        color: white;
+
+    }
+
+    #mainNav .nav-link:hover{
+        color: black;
+    }
+
+    .navbar.scrolled{
+
+        transition: background 500ms; 
+         background: black;
+        }
+
+        @media(max-width: 1200px){
+            #headingGroup h1{
+                font-size: 2rem;
+                font-weight: 100;
+            }
+        }
+
+
+
+/* ***********************************************************styling for nav ends here********************************************************************* */
+
+/************************************************************ intro style strts here ********************************************************************* */
+#d{
+    /* margin-bottom: 390px; */
+    padding-top: 1px;
+}
+
+#jumbo{
+    width: 100%;
+    height: 250px;
+    
+    background-image: url("../images/adult-architect-architectural-design-1260309.jpg");
+    background-size: cover;
+    background-position: center;
+    margin:0px;
+    padding: 0px;  
+    /* margin-bottom: 800px; */
+}
+
+
+#overlay{
+    width: 100%;
+    height: inherit;
+    /* background-color: black; */
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.8;
+
+}
+
+#textbox{
+    width: 100%;
+    height: inherit;
+    z-index: 2;
+    position: absolute;
+    color: white;
+    padding-top: 100px;
+    /* padding-left: 80px; */
+}
+
+#jumbo>h1{
+    font-size: 20bem;
+    color: whitesmoke;
+    /* font-size: 3rem; */
+    
+   
+    /* margin-top: 120px; */
+    /* text-align: center; */
+
+}
+#jumbo>h3{
+    font-size: 5bem;
+    /* font-size: 2rem; */
+  
+    /* text-align: center; */
+
+}
+/************************************************************ intro style ends here ********************************************************************* */
+
+
+
+/* ***********************************************sidebar styling starts here***************************************************************** */
+
+
+
+#sidebar{
+    /* width: 16%; */
+    height: 500px;
+    background-color:whitesmoke;
+    /* background-color:red; */
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    /* position: relative; */
+    float: left;
+    border-radius: 20px;
+    /* margin-left: 1%;
+    margin-right: 1%; */
+}
+
+#catText{
+    background-color: whitesmoke;
+    width: 80%;
+    height: 5%;
+    margin: auto;
+    margin-top: 18px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+
+}
+#cats{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    margin: auto;
+    border-radius: 20px;
+    /* text-align: center; */
+}
+
+#cats>Ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+}
+#cats>ul>li{
+    line-height: 90px;
+    text-align: center;
+}
+
+#cats>ul>li>a{
+    color: black;
+    font-size: 15px;
+    
+} 
+
+/* ********************************************sidebar styling ends here********************************************************** */
+
+
+
+#content{
+    
+    /* position: absolute; */
+    float: right;
+    /* width: 80%; */
+    /* background-color: black; */
+    /* float: left; */
+    /* position: relative; */
+    /* margin-bottom: 17%; */
+    /* margin: auto; */
+}
+
+
+.categoryStyle{
+    color: red;
+}
+
+
+.col{
+    color: red !important;
+}
+
+
+#std-form{
+    /* background-color: red; */
+}
+
+/* .fit{
+    width: 100%;
+    height: 100%;
+}
+
+.fit-text-area{
+    height: 250px;
+    width: 300px;
+} */
+
+/* .jumb{
+    background-color: red;
+    width: 90%;
+    margin: auto;
+    padding: 2px;
+} */
+
+/* *******************foot style ************************************************* */
+#foot{
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    padding:0px;
+    margin:0px;
+    /* position: absolute; */
+    display: flex;
+}
+
+#footText{
+    width: 95%;
+    height: inherit;
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 10px;    
+}
+
+#footCat{
+    width: 100%;
+    height:inherit;
+    /* background-color: whitesmoke; */
+}
+#footCat>h2{
+    color: red;
+}
+#footCat>ul{
+    /* display: inline; */
+    margin-bottom: 1px;
+    padding: 0px;
+    /* padding-bottom: 2px; */
+
+}
+#footCat>ul>li{
+    list-style-type: none;
+    display: inline;
+    /* margin-right: 25px; */
+}
+#footCat>ul>li>a{
+   color: black;
+   text-align: center;
+   /* margin: 7px; */
+}
+
+.agric{
+    text-align: center;
+}
+
+#footCat>ul>li>a:hover{
+    color: red;
+}
+
+/* *******************foot style ends *************************************************8 */
+
+
+
+
+
+/* read-more page style */
+#post-intro{
+    width: 100%;
+    height: 250px;       
+    /* padding: 5px; */
+    /* background-image: url("../images/adult-architect-architectural-design-1260309.jpg"); */
+    /* background-size: cover;
+    background-position: center;
+    margin:0px;
+    padding: 0px;   */
+ 
+    /* margin-bottom: 800px; */
+}
+#post-intro-bg{
+    width: 100%;
+    height: inherit;
+    z-index: 0;
+    position: absolute;  
+ 
+}
+#post-intro-bg>img{
+    width: 100%;
+    height: inherit;
+}
+
+#post-overlay{
+    width: 100%;
+    height: inherit;
+    /* background-color: black; */
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.8;
+}
+
+#post-textbox{
+    width: 100%;
+    height: inherit;
+    z-index: 2;
+    position: absolute;
+    color: white;   
+    /* padding-top: 9%; */
+    border-bottom: 6px solid red; 
+    /* padding-left: 80px; */
+   
+}
+
+.text-format{
+    text-align: justify;
+}
+/* read-more page style */
+
+
+#footerPartial {
+    color: white;
+    /* position: absolute; */
+    display: flex;
+    /* left: 0; */
+    /* bottom: 0; */
+    width: 100%;
+    /* padding: 10px 15px 0 15px; */
+    /* margin-bottom: 0; */
+    /* background-color: #002B04; */
+    background-color:black;
+    /* opacity: .7; */
+    transition: .5s;
+    -webkit-transition: .5s;
+  }
+  
+  #footerPartial:hover {
+    opacity: 1;
+  }
+
+  .footerLink:link, .footerLink:visited, .footerLink:active {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 1.2em;
+    transition: .5s;
+    -webkit-transition: .5s;
+  }
+  
+  .footerLink:hover {
+    color: #28A745;
+    text-decoration: none;
+    font-size: 1.4em;
+  }
+  
+  .paginate {
+      display: flex;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
+  }
+  /* @media(max-width:568px){
+    .size{width: 21rem};
+} */
+/* @media screen and (max-width: 568px) {
+    .size {
+        width: 21rem;
+    }
+  }
+   */

@@ -6,26 +6,27 @@ var postModel = require("../models/postModel");
 var middleware = require("../middleware/index");
 
 router.get("/", function(req, res){
-    console.log(req.user);
-    let perPage =9;
-    let pageQuery = parseInt(req.query.page);
-    let pageNumber = pageQuery ? pageQuery:1;
-    let noMatch = null;
-    postModel.find({}).sort({created: 'desc'}).skip((perPage * pageNumber)-perPage).limit(perPage).exec(function(err, foundPosts){
-        postModel.count().exec(function(err,count){
+    // console.log(req.user);
+    // let perPage =9;
+    // let pageQuery = parseInt(req.query.page);
+    // let pageNumber = pageQuery ? pageQuery:1;
+    // let noMatch = null;
+    // postModel.find({}).sort({created: 'desc'}).skip((perPage * pageNumber)-perPage).limit(perPage).exec(function(err, foundPosts){
+    //     postModel.count().exec(function(err,count){
+    postModel.find(function(err, foundPosts){
             if(err){
                 console.log(err);
             } else {
                 res.render("index", {
                     foundPosts: foundPosts,
-                    path: "",
-                    current: pageNumber,
-                    pages: Math.ceil(count/perPage),
-                    noMatch:noMatch,
-                    search: false
+                    // path: "",
+                    // current: pageNumber,
+                    // pages: Math.ceil(count/perPage),
+                    // noMatch:noMatch,
+                    // search: false
                 });
             }
-        })
+   
         
         });
         

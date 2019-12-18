@@ -11,7 +11,8 @@ var express = require("express"),
     var postRoutes = require("./routes/post");
     var commentRoutes = require("./routes/comment");
 
-    mongoose.connect("mongodb://localhost:27017/ej", {useNewUrlParser: true});
+    // mongoose.connect("mongodb://localhost:27017/ej", {useNewUrlParser: true});
+    mongoose.connect("mongodb+srv://admin:admin@cluster0-kzl38.mongodb.net/test?retryWrites=true&w=majority", {useNewUrlParser: true});
 
     app.use(require("express-session")({
         secret: "glitch free technologies",
