@@ -1,0 +1,92 @@
+<% include ../partials/header %>
+
+<!-- <nav id="mainNav" class="navbar  navbar-dark navbar-expand-md sticky-top py-0 "> -->
+<nav id="mainNav" class="navbar bg-dark  navbar-dark navbar-expand-md mb-1 ">
+    <div class="container">
+        <a class="navbar-brand" href="/">E-journal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="jumbotron pl-0 col-md-6 m-auto">
+        <!-- <div id="std-form" class="p-0 col-sm-12 col-md-6 col-lg-6 mt-1 mb-5  pt-1  vh-100  "> -->
+            <form action="/post" method="POST" class="text-center position-static">
+                <div class="form-group">
+                    <!-- <label for="username">Username</label>   -->
+                    <div class="row">
+                        <div class="col-lg-10 col-10 pr-0">
+                            <span class="fa fa-user"></span>
+                        </div>
+                        <div class="col-md-10 col-10 m-auto">
+                            <input class=" form-control" type="text" name="topic" id="topic"
+                                placeholder="topic">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <!-- <label for="password">Password</label> -->
+                    <div class="row">
+                        <div class="col-md-10 col-10 pr-0">
+                            <span class="fa fa-lock"></span>
+                        </div>
+                        <div class="col-md-10 col-10 m-auto">
+                                <select class=" form-control" name="category" id="category">
+                                        <option value="">Select Category</option>
+                                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                        <option value="Computer Engineering">Computer Engineering</option>
+                                        <option value="Chemical Engineering">Chemical Engineering</option>
+                                        <option value="Agricultural Engineering">Agricultural Engineering</option>
+                                        <option value="Electrical Engineering">Electrical Engineering</option>
+
+                                </select>
+                        </div>
+                    </div>
+                    <!-- <small style="font-size:12px;"><a class="link" href="/forgot">forgot password??</a></small>                   -->
+                </div>
+                    
+
+                        <div class="form-group">
+                                <!-- <label for="username">Username</label>   -->
+                                <div class="row">
+                                    <div class="col-lg-10 col-10 pr-0">
+                                        <span class="fa fa-user"></span>
+                                    </div>
+                                    <div class="col-md-10 col-12 m-auto">
+                                            <textarea class="ml-2 form-control" name="article" id="article" cols="30" rows="11">type article here</textarea>
+                                    </div>
+            
+                                </div>
+            
+                            </div>
+
+                
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-success">submit</button>
+                </div>
+            </form>
+        <!-- </div> -->
+    </div>
+</div>

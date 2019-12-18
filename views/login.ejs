@@ -1,0 +1,83 @@
+<% include partials/header %>
+
+           <!-- <nav id="mainNav" class="navbar  navbar-dark navbar-expand-md sticky-top py-0 "> -->
+                <nav id="mainNav" class="navbar bg-dark  navbar-dark navbar-expand-md mb-1 ">
+                        <div class="container">
+                            <a class="navbar-brand" href="/">E-journal</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/login">Login</a>
+                                    </li>
+                                </ul>
+                             
+                            </div>
+                        </div>
+                    </nav>
+
+
+
+<div class="container">
+    <div class="jumbotron">
+            <div id="std-form" class="mt-5 mb-5 mx-auto pt-5 px-4 vh-100 col-lg-8 ml-auto">
+                    <form action="/login" method="POST" class="text-center position-static">
+                        <div class="form-group">
+                            <label for="username">Username</label>  
+                            <div class="row">
+                                <div class="col-lg-10 col-10 pr-0">
+                                    <span class="fa fa-user"></span>
+                                </div>
+                                <div class="col-lg-10 col-10">
+                                        <input class="ml-5 form-control" type="text" name="username" id="username" placeholder="username">
+                                    </div>
+                                    
+                                </div>      
+                            
+                            </div>
+                            <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="row">
+                                <div class="col-lg-10 col-10 pr-0">
+                                    <span class="fa fa-lock"></span>
+                                </div>
+                                <div class="col-lg-10 col-10">
+                                    <input class="ml-5 form-control" type="password" name="password" id="password" placeholder="password">
+                                </div>
+                            </div>
+                            <!-- <small style="font-size:12px;"><a class="link" href="/forgot">forgot password??</a></small>                   -->
+                        </div>
+                        <div class="form-group ml-auto">
+                                <small>are you a new user??<a href="/signup"> sign up here!</a></small>
+                             
+                            </div>
+                      
+                            <div class="form-group">
+                                <button class="btn btn-lg btn-success">login</button>
+                        </div>
+                    </form>
+                </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<% include partials/footer %>

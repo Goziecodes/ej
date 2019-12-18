@@ -1,0 +1,121 @@
+<%include ../partials/header%>
+
+<!-- <nav id="mainNav" class="navbar  navbar-dark navbar-expand-md sticky-top py-0 "> -->
+        <nav id="mainNav" class="navbar  navbar-dark navbar-expand-md fixed-top py-0 ">
+                <!-- <div class="container"> -->
+                <a class="navbar-brand" href="/">E-journal</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <% if (currentUser){ %>
+                        <% console.log(currentUser) %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Logged in as <%=currentUser.username%></a>
+                        </li>
+                        <% } else{ %>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                        <%}  %>
+                    </ul>
+            
+                </div>
+                <!-- </div> -->
+            </nav>
+            
+        <%    if(foundPost){   %>
+            <% console.log(foundPost) %>
+            <div id="post-intro">
+                    <div id="post-intro-bg" class="">
+                        <img src="<%=foundPost.img%>" alt="">   
+                    </div>
+                    <div id="post-overlay"></div>
+                    <div id="post-textbox" class="">
+                        <h2 class="mt-5">Posted By:<%=foundPost.author.fullname%></h2>
+                        <h3>3 days ago</h3>
+                        <h3 class="mb-4">Category:<%=foundPost.category%></h3>
+                        <h1 class="text-center p-0 m-0"><%=foundPost.topic%></h1>
+                    <!-- <div class="hr p-0 m-0"></div> -->
+            </div> 
+                    </div>            
+            
+                    <div class="container">
+                        <div class="jumbotron text-format">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae dolore cupiditate et perferendis expedita exercitationem aut alias accusantium illum repudiandae provident consectetur ipsa molestiae maiores, consequuntur ea quo. Nobis, esse?
+                                Est ad sunt atque ratione. Vel qui, minima laborum dicta recusandae quaerat distinctio perferendis temporibus iste illum quae quis aut explicabo. Omnis nemo obcaecati possimus quod hic sapiente exercitationem. Facere?
+                                Assumenda rem sit illum cum perferendis? Corrupti laudantium molestiae aliquam voluptates sint aliquid voluptatem odio aspernatur laborum quasi, repudiandae consequatur temporibus praesentium corporis iusto obcaecati. Ut, debitis nisi. Mollitia, nihil.
+                                Ad architecto officia qui porro aperiam sunt quaerat? Non laboriosam numquam in consequatur. Soluta iste sequi tempora. Iure, neque. Accusantium, cupiditate est! Qui alias, maiores quasi odit quos tempore praesentium.
+                                Modi illum ea, vero aliquam est blanditiis eveniet! Cum consequatur eos blanditiis voluptatibus consectetur minima nostrum quis explicabo delectus tempora tenetur nobis, quidem, quasi qui aspernatur sed. Nemo, inventore temporibus.
+                                Deleniti voluptatem recusandae doloribus molestias! Optio aliquam blanditiis ratione maxime unde culpa? Iure corrupti aspernatur beatae nemo ullam sunt? Deleniti blanditiis a hic quibusdam id possimus tempore ratione in quod!
+                                Odio voluptate culpa in quod fuga praesentium libero ipsam eius repellendus. Blanditiis alias officia consectetur voluptatibus fugiat a ullam iure nobis maxime inventore quisquam aperiam provident, aliquid ipsa? Modi, error?
+                                Atque sequi vel quae magnam labore cum ad rerum ipsam, nulla doloremque molestiae veritatis odit ex quod, in, cupiditate unde voluptates dolor doloribus. Quas cumque amet ducimus sed consectetur nihil.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur debitis voluptas itaque delectus quasi reprehenderit exercitationem dolores maiores quis id voluptate eius in, dolorum, dolor excepturi quo iure similique temporibus.
+                                Illum aperiam, suscipit aut eos non animi est. Nisi fugiat ut reiciendis, voluptatibus recusandae, soluta error unde vitae illo dignissimos laborum consectetur. Error, doloribus quas ducimus neque molestias totam incidunt.
+                                Veritatis doloribus fuga explicabo consectetur laudantium soluta doloremque. Veritatis dolorum explicabo rem doloremque! Qui, vel earum impedit voluptates maiores dolor consequatur reiciendis accusantium repudiandae recusandae labore corporis. Hic, aperiam recusandae!
+                                Alias provident expedita ipsa ex officiis ullam ut necessitatibus quam atque, consectetur neque labore aperiam a fuga quidem quaerat quis similique exercitationem harum suscipit veritatis ipsum soluta iste. Quod, corporis.
+                                In, nesciunt molestiae. Reprehenderit, itaque? Rerum ipsum reiciendis beatae distinctio officiis sit voluptas laborum adipisci accusamus facere impedit quam nam, facilis tenetur quas ab, cum nisi provident? Fuga, officiis illo.
+                                Sunt cumque iste magnam quam debitis nostrum placeat sequi ducimus autem, voluptatibus necessitatibus repellendus tenetur, non blanditiis, vitae quae ipsum dolorum repudiandae? Sed voluptate aliquam qui nihil, nemo repellat alias!
+                                Voluptatem voluptas pariatur sunt provident soluta voluptate obcaecati sed quas? Fugit accusantium nisi nemo provident inventore id. Temporibus provident quae consequuntur cumque! Nihil, odit perspiciatis. Quas animi quos eos dolore.
+                                Assumenda minus autem accusantium eius voluptate in ut facere quas sed ipsa magnam, molestiae impedit reiciendis quidem iusto, expedita laborum hic doloremque tempore! Sit recusandae, tempora quia commodi quaerat laboriosam!
+                                Pariatur animi dignissimos sequi, sapiente itaque nemo molestiae deleniti, quam neque velit minima amet. Nulla sequi beatae cumque? Repellat facilis eos quam perspiciatis suscipit nulla qui cumque accusamus itaque quidem!
+                                Amet ipsam velit ullam labore at qui sequi veritatis ipsa expedita omnis alias, vel, blanditiis, nesciunt atque repellat quibusdam corrupti nostrum sit similique quo esse iste incidunt vero. Quidem, voluptatum?
+                                Enim porro cum dolores tempore modi ducimus accusamus odit suscipit officia in, expedita dolore iste perspiciatis rerum ullam eum magnam et iure deserunt adipisci quam ex voluptates doloribus! Voluptas, quia.
+                                Iste tempora repudiandae distinctio odio eum quos, aspernatur vel totam, suscipit commodi amet nihil neque recusandae labore est hic officia rerum fuga mollitia, ab sit. Perspiciatis esse nulla consectetur distinctio!
+                                Voluptate, ipsa. Vitae, modi soluta? Nostrum soluta tempore atque dolor magni, optio tenetur amet eum laborum adipisci modi rem asperiores consectetur sunt cum illum natus eos ea voluptatem molestias delectus.
+                                Corrupti et, explicabo laudantium quia expedita laborum, voluptatum recusandae dolor ullam ratione quod. Corrupti vero dicta soluta excepturi repellendus! Nemo alias, maiores doloribus aliquam deserunt ad assumenda! Inventore, soluta amet.
+                                Ab reprehenderit porro aperiam iste quod omnis. Perferendis, provident adipisci? Aliquam rem mollitia iste hic neque optio sed repellendus adipisci necessitatibus, nemo error id assumenda quis amet voluptates, provident nesciunt.
+                                Nobis adipisci natus magni facere ea? Aliquam praesentium aliquid reprehenderit dolorum dolor iste odit, ipsa earum quidem voluptas ab in! Laudantium dignissimos vitae aperiam, veritatis et autem consequuntur temporibus at!
+                                Beatae reiciendis adipisci provident est placeat rem repellendus, ex aperiam magni aliquid, praesentium minima. Architecto quas aliquam illo laborum consequuntur voluptatibus totam praesentium nisi, eos distinctio vel, voluptatem officia voluptate!
+                                Vero vel enim magnam tempora nesciunt laboriosam saepe, eveniet eaque consequuntur unde? Expedita id ipsam corrupti eaque fugit necessitatibus dignissimos est eius error, ea veniam neque ipsum odio sunt ab.
+                                Minima quam temporibus itaque consectetur dolorem, neque doloribus consequatur dicta quae harum. Quod blanditiis debitis fugit velit molestiae? Reprehenderit, nihil? Beatae qui at incidunt cupiditate iusto. Excepturi provident laudantium officia!
+                                Repellendus, facilis accusantium? Beatae accusantium consectetur laboriosam nisi, ab distinctio deserunt a minus dignissimos dolorem quisquam, et repellat tempora illo fugiat optio odit asperiores provident velit minima? Distinctio, quod quisquam.
+                            </p>
+                        </div>
+                    </div>
+            
+
+        <%    }else{ %>
+           <div class=" bg-dark text-white" style="height:250px">
+                <h2 class="pt-5">no detail</h2>
+           </div>
+         <%   }   %>
+
+         <div class="card">
+                <div class="mb-2 mr-5 pr-5 text-right">
+                    <a class="btn btn-success" href="/post/<%=foundPost._id%>/comments/new"> Add new comment</a>
+                </div>
+                <% foundPost.comments.forEach(function(comment){ %>
+                 <div class="row">
+                         <div class="col-md-12">
+                             <strong> <%= comment.author.username %> </strong> 
+                             <span class="float-right">10 days ago</span>
+                             <p><%= comment.text%></p>
+                             <% if (currentUser && comment.author.id.equals(currentUser._id)){ %>
+                             <a class="btn btn-sm btn-warning" href="/post/<%=foundPost._id%>/comments/<%=comment._id%>/edit">edit</a>
+                             <form class="delete" action="/post/<%= foundPost._id %>/comments/<%=comment._id%>?_method=DELETE" method="post">
+                                 <button class="btn btn-sm btn-danger">Delete</button>
+                             </form>
+                             <% } %>
+                         </div>
+                     </div>
+                
+                 <% }) %>
+            </div>
+
+
+
+
+<%include ../partials/footer%>
